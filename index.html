@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+  <title>JS booking</title>
+</head>
+<body>
+
+	<div class="booking-app" id="bookingApp">
+		<form method="post" action="index.html">
+			<div class="booking-app__title-container">
+				<b class="booking-app__title">Записаться:</b>
+			</div>
+
+			<section class="booking-app__section-container">
+				<div class="booking-app__section-container-col">
+					<label class="booking-app__section-container-col-label" for="dateInput">Дата:</label>
+					<input id="dateInput" name="dateInput" type="date" required>
+				</div>
+			</section>
+
+			<section class="booking-app__section-container">
+				<div class="booking-app__section-container-col">
+					<label class="booking-app__section-container-col-label" for="timeInput">Время (с 10:00 до 18:00):</label>
+					<input id="timeInput" name="timeInput" type="time" min="10:00" max="18:00" required>
+				</div>
+			</section>
+
+			<section class="booking-app__section-container">
+				<div class="booking-app__section-container-col">
+					<label class="booking-app__section-container-col-label" for="dateInput">Имя:</label>
+					<input class="booking-app__name-tel-input" id="nameInput" name="nameInput" type="text" placeholder="Анна" required minlength="2" maxlength="15">
+				</div>
+			</section>
+
+			<section class="booking-app__section-container">
+				<div class="booking-app__section-container-col">
+						<label class="booking-app__section-container-col-label" for="timeInput">Телефон:</label>
+						<input class="booking-app__name-tel-input" id="phoneInput" name="phoneInput" type="tel" placeholder="+375 33 382-98-73" minlength="5" maxlength="22" required>
+				</div>
+			</section>
+
+			<section class="booking-app__section-container booking-app__section-submit-container">
+				<button class="booking-app__submit" type="submit">Подтвердить</button>
+			</section>
+		</form>
+	</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
