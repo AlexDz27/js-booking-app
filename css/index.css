@@ -1,9 +1,11 @@
 html {
-	background-color: #ccc;
+	background-color: #ececec;
 }
 
 body {
 	font-family: "Roboto", "Arial", sans-serif;
+	margin-top: -1px;
+  border-top: 1px solid transparent;
 }
 
 .booking-app {
@@ -15,6 +17,9 @@ body {
 	margin: 0 auto;
 	margin-top: 40px;
 	color: #000;
+}
+.booking-app--inactive {
+	display: none;
 }
 
 .booking-app input {
@@ -63,4 +68,49 @@ body {
 .booking-app__submit:hover {
 	color: #2ca8ff;
 	border: 1px solid #2ca8ff;
+}
+
+.button {
+ 	position: fixed;
+ 	top: 50px;
+ 	right: 50px;
+ 	z-index: 1;
+ 	cursor: pointer;
+}
+
+.bookings-screen {
+	background-color: #e8e8e8;;
+	display: none;
+	padding: 60px;
+}
+.bookings-screen--active {
+	display: block;
+}
+
+.booking-day--today {
+	border-top: 1px solid #de6c6c;
+  border-bottom: 1px solid #de6c6c;
+}
+
+.bookings {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+.booking {
+	max-width: 300px;
+  border: 1px solid #c7c7c7;
+  border-radius: 2%;
+  margin-right: 55px;
+  margin-bottom: 50px;
+  padding: 9px;
+}
+
+.booking-info {
+	list-style-type: none;
+	padding: 0;
+}
+
+.booking-info li {
+	margin-bottom: 10px;
 }
